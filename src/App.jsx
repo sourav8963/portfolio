@@ -241,7 +241,7 @@ const App = () => {
               Contact Me
             </motion.a>
             <motion.a
-              href="https://drive.google.com/file/d/1BVzDgwLwle--4Q59L6_frzMFX_c9JmVT/view?usp=sharing"
+              href="https://sourav8963.in"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
