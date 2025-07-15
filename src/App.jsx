@@ -216,7 +216,7 @@ const App = () => {
             className="mb-8"
           >
             <h1 className="text-6xl md:text-8xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-white to-purple-600 bg-clip-text text-transparent">
-              Sourav Kumar
+             Hey, I'm Sourav
             </h1>
             <p className="text-2xl md:text-3xl text-gray-300 mb-8">
               Full Stack Developer & Software Engineer
@@ -241,14 +241,14 @@ const App = () => {
               Contact Me
             </motion.a>
             <motion.a
-              href="https://sourav8963.in"
+              href="https://drive.google.com/file/d/1BVzDgwLwle--4Q59L6_frzMFX_c9JmVT/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05 }}
               className="flex items-center gap-2 bg-white text-black hover:bg-gray-200 px-6 py-3 rounded-full transition-colors"
             >
               <ExternalLink className="w-5 h-5" />
-              Portfolio
+              Resume
             </motion.a>
           </motion.div>
 
