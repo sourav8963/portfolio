@@ -82,10 +82,10 @@ export default function NotFound() {
       */}
       <Link
         to="/login"
-        className="absolute rounded-[8px] border border-transparent hover:border-white/30 bg-transparent hover:bg-white/15 active:bg-white/25 hover:scale-[1.02] transition-all cursor-pointer hover:backdrop-blur-[1px] shadow-[0_4px_12px_rgba(255,255,255,0)] hover:shadow-[0_4px_12px_rgba(255,255,255,0.15)] z-20"
+        className="absolute rounded-[8px] border border-transparent hover:border-white/30 bg-transparent hover:bg-white/15 active:bg-white/25 hover:scale-[1.02] transition-all cursor-pointer hover:backdrop-blur-[0.5px] shadow-[0_4px_12px_rgba(255,255,255,0)] hover:shadow-[0_4px_12px_rgba(255,255,255,0.15)] z-20"
         style={{
-          left: "1176px",
-          top: "5px",
+          left: "1300px",
+          top: "8px",
           width: "55px",
           height: "32px",
         }}
@@ -99,7 +99,7 @@ export default function NotFound() {
       */}
       <Link
         to="/"
-        className="absolute rounded-full border border-transparent hover:border-white/30 bg-transparent hover:bg-white/15 active:bg-white/25 hover:scale-[1.02] transition-all cursor-pointer hover:backdrop-blur-[1px] shadow-[0_4px_12px_rgba(255,255,255,0)] hover:shadow-[0_4px_12px_rgba(255,255,255,0.15)] z-20"
+        className="absolute rounded-full border border-transparent hover:border-white/30 bg-transparent hover:bg-white/15 active:bg-white/25 hover:scale-[1.02] transition-all cursor-pointer hover:backdrop-blur-[0px] shadow-[0_4px_12px_rgba(255,255,255,0)] hover:shadow-[0_4px_12px_rgba(255,255,255,0.15)] z-20"
         style={{
           left: `${videoLayout.left + 0.45234 * videoLayout.width}px`,
           top: `${videoLayout.top + 0.88333 * videoLayout.height}px`,
