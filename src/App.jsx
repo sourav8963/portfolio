@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Resume from './components/Resume'
-import NotFound from "./Components/NotFound";
+import NotFound from './components/NotFound';
 
 const App = () => {
   return (
