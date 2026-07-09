@@ -3,43 +3,39 @@ import { Home, ArrowLeft, Search } from "lucide-react";
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-50 px-6">
-      <div className="max-w-lg text-center">
-        <h1 className="text-8xl font-extrabold text-gray-900">404</h1>
+    <div className="relative h-screen w-full overflow-hidden">
+      {/* Background Video */}
+      <video
+        autoPlay
+        muted
+        loop
+        playsInline
+        className="absolute inset-0 h-full w-full object-cover"
+      >
+        <source src="public/404 video.mp4" type="video/mp4" />
+      </video>
 
-        <h2 className="mt-4 text-3xl font-bold text-gray-800">
+      {/* Dark Overlay */}
+      <div className="absolute inset-0 bg-black/60"></div>
+
+      {/* Content */}
+      <div className="relative z-10 flex h-full flex-col items-center justify-center text-white text-center px-6">
+        <h1 className="text-8xl font-bold">404</h1>
+
+        <h2 className="mt-4 text-4xl font-semibold">
           Oops! Page Not Found
         </h2>
 
-        <p className="mt-3 text-gray-600">
-          The page you are looking for doesn't exist, may have been moved,
-          or the URL might be incorrect.
+        <p className="mt-3 max-w-md text-gray-200">
+          The page you're looking for doesn't exist or has been moved.
         </p>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-4">
-          <Link
-            to="/"
-            className="flex items-center gap-2 rounded-lg bg-blue-600 px-5 py-3 text-white hover:bg-blue-700 transition"
-          >
-            <Home size={18} />
-            Home
-          </Link>
-
-          <button
-            onClick={() => window.history.back()}
-            className="flex items-center gap-2 rounded-lg border border-gray-300 px-5 py-3 hover:bg-gray-100 transition"
-          >
-            <ArrowLeft size={18} />
-            Go Back
-          </button>
-        </div>
-
-        <div className="mt-10 flex items-center justify-center text-gray-400">
-          <Search size={18} />
-          <span className="ml-2 text-sm">
-            Error Code: 404 • Resource Not Found
-          </span>
-        </div>
+        <Link
+          to="/"
+          className="mt-8 rounded-lg bg-white px-6 py-3 text-black font-semibold transition hover:bg-gray-200"
+        >
+          Back to Home
+        </Link>
       </div>
     </div>
   );
